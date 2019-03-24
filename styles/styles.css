@@ -3,7 +3,7 @@ body, html{
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    display: flex;
+    
     flex-direction: column;
 }
 #navBar{
@@ -21,10 +21,13 @@ body, html{
     color: #c5c6c0;
 }
 #aboutMe{
-    background-color: #66FCF1;
+    background-color: rgb(168, 255, 249);
 }
 #portfolio{
-    background-color: #45A29E;
+    background-color: rgb(168, 255, 249);
+}
+#finishedProject{
+    background-color: rgb(90, 161, 158);
 }
 #footer{
     background-color: #1F2833;
@@ -41,7 +44,8 @@ body, html{
 }
 .portfolioSquares{
     background-color: #c5c6c0;
-    margin: 8px;
+    margin: 6px;
+    width: 200px;
 }
 .thing{
     min-height: 430px;
@@ -52,4 +56,7 @@ body, html{
         height: 200px;
         width: 200px;
     } 
+}
+.meText{
+    font-size: 17px;
 }
