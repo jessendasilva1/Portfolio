@@ -4,38 +4,58 @@ html {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-
+    color: whitesmoke;
     flex-direction: column;
+    scroll-behavior: smooth;
+}
+#navbar{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
 }
 
-#navBar {
-    height: 100px;
-    background-color: #1F2833;
+#navLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-right: 10px;
 }
 
-#headerNameTag {
-    color: #c5c6c0;
+.navText{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
 }
-
-.headerLinks {
-    color: #c5c6c0;
-    margin: 5px;
-}
-
-.headerLinks:hover {
-    color: #c5c6c0;
+.navText:hover{
+    text-decoration: none; 
+    color: grey;
 }
 
 #aboutMe {
-    background-color: rgb(168, 255, 249);
+    min-height: 100vh;
+    justify-content: center;
+    align-content: center;
+    background-image: url("../images/873004-black-wood-background.jpg");
 }
 
 #portfolio {
-    background-color: rgb(168, 255, 249);
+    background-color: #feffff;
 }
 
 #finishedProject {
-    background-color: rgb(90, 161, 158);
+    background-color: #bffffc;
+}
+
+#resume{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #bffffc;
+    padding-bottom: 35px;
 }
 
 #footer {
@@ -43,8 +63,32 @@ html {
     height: 70px;
 }
 
-.personalInfoDivs {
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
     font-size: 20px;
+}
+
+.btn:hover {
+    background-color: RoyalBlue;
+  }
+
+.personalInfoDivs {
+    display: flex;
+    flex-direction: row;
+    align-content: space-evenly;
+    font-size: 10px;
+    margin: 10px 10px 10px 0px;
+}
+
+.infoBoxes{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
     margin: 10px;
 }
 
@@ -60,25 +104,72 @@ html {
     width: 200px;
 }
 
+.projects{
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    align-items: center;
+    color: black;
+}
+
 .thing {
     min-height: 430px;
     height: fit-content;
 }
+
+#intro{
+    max-width: 900px;
+}
+
 #aboutMeContainer{
     display: flex;
     margin-bottom: 10px;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-content: center;
     justify-content: center;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    max-width: 900px;
+}
+#profileImage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left: 10px;
 }
 @media screen and (max-width: 360px) {
     .profileImage {
         height: 200px;
         width: 200px;
+    }
+    #profileImage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+    }
+    #aboutBoxes{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .personalInfoDivs {
+        display: flex;
+        flex-direction: column;
+        align-content: space-evenly;
+        font-size: 10px;
+        margin: 10px 10px 10px 0px;
+    }
+    #navbar{
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        min-height: 70px;
     }
 }
 
@@ -93,9 +184,28 @@ html {
         padding-left: 15px;
         margin-right: auto;
         margin-left: auto;
+        max-width: 900px;
     }
 }
 
+.aboutTitle{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    color: black;
+    text-decoration: underline;
+}
+
 .meText {
-    font-size: 17px;
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(145, 145, 145);
+}
+
+.aboutMeHeaders {
+    margin: 0px 0px 2px 0px;
+    color: rgb(0, 124, 133);
+}
+
+.projectTitle{
+    color: rgb(0, 124, 133);
 }

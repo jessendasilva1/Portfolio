@@ -17,40 +17,82 @@
 
 <body>
 
-    <div id="navBar" class="d-flex flex-row flex-grow-0">
-        <div id="headerName" class="d-flex flex-grow-1 align-items-center pl-4">
-            <h2 id="headerNameTag">Jessen Dasilva</h2>
-        </div>
-        <div id="navLinks" class="d-flex flex-grow-1 justify-content-end align-items-center pr-4">
-            <a href="index.html" class="headerLinks">Home</a>
-
-        </div>
-    </div>
-
-    <div id="aboutMe" class="thing d-flex flex-grow-1 flex-column align-items-center justify-content-center">
-        <div class="container mt-3">
-            <h3>Aspiring Full Stack Web Developer. Passion for bringing user ideas to life.</h3>
+    <div id="aboutMe" class="thing d-flex flex-column align-items-center">
+        <navbar id="navbar" class="container">
+            <div></div>
+            <div id="navLinks">
+                <a class="navText" href="index.html" target="blank">
+                    <div>Home</div>
+                </a>
+                <a class="navText" href="#finishedProject" target="blank">
+                    <div>Latest Project</div>
+                </a>
+                <a class="navText" href="#portfolio" target="blank">
+                    <div>Portfolio</div>
+                </a>
+                <a class="navText" href="#resume" target="blank">
+                    <div>Resume</div>
+                </a>
+            </div>
+        </navbar>
+        <div id="intro" class="container d-flex flex-column align-content-center mt-5">
+            <h3>Hello, Im Jessen.</h3>
+            <h3>Im an aspiring Full Stack Web Developer with a passion for bringing user ideas to life.</h3>
         </div>
         <div id="aboutMeContainer" class="container">
-            <div id="profileImage" class="d-flex justify-content-center">
-                <img src="images/profilePicture2.PNG" class="profileImage" height="350px" width="350px"
+            <div id="profileImage">
+                <img src="images/profilepicture3.png" class="profileImage" height="220px" width="220px"
                     alt="profilePicture">
-            </div>
-            <div class="d-flex justify-content-center">
-                <div id="personalInfo" class="personalInfoDivs">
-                    <br>
-                    <p class="meText"> I have completed three years at the University of Guelph and the University of
-                        Toronto Full
-                        Stack Bootcamp. Prominent skills in HTML, CSS, JS and backend tech such as Mongo, GraphQL and
-                        Node.js.
-                    </p>
-                    <br>
-                    <p class="meText">
-                        I am eager to bring my hardworking, organized, structured personality and desire to
-                        tackle new problems to the career market. My goal is to making people's lives easier
-                        and more efficient while making it look beautiful and simplistic.
-                    </p>
+                <div class="meText d-flex flex-column mt-2">
+                    <div class="d-flex flex-row">
+                        <p class="aboutMeHeaders">Name:</p> Jessen Dasilva
+                    </div>
+                    <div class="d-flex flex-row">
+                        <p class="aboutMeHeaders">Age:</p> 23
+                    </div>
+                    <div class="d-flex flex-row">
+                        <p class="aboutMeHeaders">Linkedin:</p> <a class="meText" href="https://www.linkedin.com/in/jessen-dasilva-84677715a/" target="_blank">Profile</a>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <p class="aboutMeHeaders">Github:</p> <a class="meText" href="https://github.com/jessendasilva1/" target="_blank">Repo</a>
+                    </div>
                 </div>
+            </div>
+            <div id="aboutBoxes" class="d-flex justify-content-between flex-column">
+                <div class="personalInfoDivs">
+                    <div class="infoBoxes">
+                        <h4 class="aboutMeHeaders">Background</h4>
+                        <p class="meText">
+                            I have completed three years at the University of Guelph and the University of
+                            Toronto Full Stack Web Development Bootcamp.
+                        </p>
+                    </div>
+                    <div class="infoBoxes">
+                        <h4 class="aboutMeHeaders">Vision</h4>
+                        <p class="meText">
+                            I am eager to bring my hardworking, organized, structured personality and desire to
+                            tackle new problems to the career market. My goal is to making people's lives easier
+                            and more efficient while making it look beautiful and simplistic.
+                        </p>
+                    </div>
+                </div>
+                <div class="personalInfoDivs">
+                    <div class="infoBoxes">
+                        <h4 class="aboutMeHeaders">Skills</h4>
+                        <p class="meText">
+                            Prominent skills in HTML, CSS, JS, ReactJS, Jquery and backend tech such as MongoDB, MySQL,
+                            Node.js and REST methodologies.
+                        </p>
+                    </div>
+                    <div class="infoBoxes">
+                        <h4 class="aboutMeHeaders">Future</h4>
+                        <p class="meText">
+                            I am always looking to expand my knowledge by tackling tough, interesting topics
+                            while contributing in a meaningful way with each and every project I work on.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -58,16 +100,18 @@
     <div id="finishedProject" class="d-flex flex-grow-1 justify-content-center">
         <div id=porfolioDivContent class="d-flex mt-3 flex-column align-items-center">
             <div class="d-flex justify-content-center">
-                <h2 id="aboutTitle" class="mt-3 mb-3">Last Project: Calorie Tracker</h2>
+                <h2 class="aboutTitle mt-3 mb-3">Last Project: Bueno</h2>
             </div>
             <div class="portfolioSquares">
-                <a class="links" target="_blank" href="https://paprika-project2.herokuapp.com/">
-                    <img class="portfolioImages" src="./images/calorieTracker.png">
+                <a class="links" target="_blank" href="https://intense-forest-16529.herokuapp.com">
+                    <img class="portfolioImages" src="./images/bueno-logo.png">
                 </a>
             </div>
             <div>
-                <p style="width: 200px">Helps users track calories of specific foods and keep a favorited list of
-                    different foods</p>
+                <p style="color: black; width: 200px">
+                    A classic twist on the classic card game UNO! Play with up to
+                    4 players and see who is the UNO master.
+                </p>
             </div>
         </div>
     </div>
@@ -75,51 +119,90 @@
     <div id="portfolio" class="thing d-flex flex-grow-1 justify-content-center">
         <div id=porfolioDivContent class="d-flex flex-column justify-content-center">
             <div class="d-flex justify-content-center">
-                <h2 id="aboutTitle" class="mt-3 mb-3">Project Portfolio</h2>
+                <h2 class="aboutTitle mt-3 mb-3">Project Portfolio</h2>
             </div>
 
-            <div id="stuff" class="d-flex flex-row flex-wrap justify-content-center">
-                <div class="portfolioSquares">
-                    <a class="links" target="_blank" href="https://github.com/jessendasilva1/liri-node-app">
-                        <img class="portfolioImages" src="./images/liri_bot_image.png">
-                    </a>
-                    <div class="d-flex justify-content-center">
-                        <p>Liri</p>
+            <div id="stuff" class="d-flex flex-column flex-wrap justify-content-center flex-row">
+                <div class="projects">
+                    <div class="portfolioSquares">
+                        <a class="links" target="_blank" href="https://github.com/jessendasilva1/liri-node-app">
+                            <img class="portfolioImages" src="./images/liri_bot_image.png">
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <p class="projectTitle">Liri</p>
+                        </div>
+                    </div>
+                    <div>
+                        A command line based application that allows you to search for different movies,
+                        spotify songs and concerts through a user friendly interface.
                     </div>
                 </div>
-                <div class="portfolioSquares">
-                    <a class="links" target="_blank" href="https://github.com/jessendasilva1/StarwarsRPG">
-                        <img class="portfolioImages" src="./images/starwars.png">
-                    </a>
-                    <div class="d-flex justify-content-center">
-                        <p>StarwarsRPG</p>
+                <div class="projects">
+                    <div class="portfolioSquares">
+                        <a class="links" target="_blank" href="https://github.com/jessendasilva1/StarwarsRPG">
+                            <img class="portfolioImages" src="./images/bookSearch.jfif">
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <p class="projectTitle">React Book Search</p>
+                        </div>
+                    </div>
+                    <div>
+                        Provides users with a platform to search and save books powered by the 
+                        Google Books API and MongoDB.
                     </div>
                 </div>
-                <div class="portfolioSquares">
-                    <a class="links" target="_blank" href="https://github.com/jessendasilva1/TriviaGame">
-                        <img class="portfolioImages" src="./images/trivia_Image.png">
-                    </a>
-                    <div class="d-flex justify-content-center">
-                        <p>Trivia Game</p>
+                <div class="projects">
+                    <div class="portfolioSquares">
+                        <a class="links" target="_blank" href="https://github.com/jessendasilva1/TriviaGame">
+                            <img class="portfolioImages" src="./images/trivia_Image.png">
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <p class="projectTitle">Trivia Game</p>
+                        </div>
+                    </div>
+                    <div>
+                        Trivia game that tests your knowledge of computer science topics
+                        and technologies both modern and ancient.
                     </div>
                 </div>
-                <div class="portfolioSquares">
-                    <a class="links" target="_blank" href="https://github.com/jessendasilva1/WordGuessGame">
-                        <img class="portfolioImages" src="./images/hangman.png">
-                    </a>
-                    <div class="d-flex justify-content-center">
-                        <p>Hangman</p>
+                <div class="projects">
+                    <div class="portfolioSquares">
+                        <a class="links" target="_blank" href="https://github.com/jessendasilva1/WordGuessGame">
+                            <img class="portfolioImages" src="./images/hangman.png">
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <p class="projectTitle">Hangman</p>
+                        </div>
+                    </div>
+                    <div>
+                        Classic hangman with a NHL hockey theme.
                     </div>
                 </div>
-                <div class="portfolioSquares">
-                    <a class="links" target="_blank" href="https://taylorfantin.github.io/Project1/">
-                        <img class="portfolioImages" src="./images/Concert_2_0.jpg">
-                    </a>
-                    <div class="d-flex justify-content-center">
-                        <p>ConcertNow</p>
+                <div class="projects">
+                    <div class="portfolioSquares">
+                        <a class="links" target="_blank" href="https://taylorfantin.github.io/Project1/">
+                            <img class="portfolioImages" src="./images/Concert_2_0.jpg">
+                        </a>
+                        <div class="d-flex justify-content-center">
+                            <p class="projectTitle">ConcertNow</p>
+                        </div>
+                    </div>
+                    <div>
+                        Application that allows you to search concerts in your area and
+                        are able to see the information about the concert including
+                        locaiton, date, time and artist info.
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div id="resume">
+        <div class="aboutTitle">
+            <h3>Resume</h3>
+        </div>
+        <div>
+            <a href="https://docs.google.com/document/d/1f-51Z0YlQIEFPMQ3lSvkKScwRhQvB5bmgDw8C-2p96M/edit?usp=sharing" target="_blank"><div class="btn">View Resume</div></a>
         </div>
     </div>
 
